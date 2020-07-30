@@ -1,11 +1,11 @@
-#ifndef IOSTREAM
-#define IOSTREAM
-#include <iostream>
-#endif
-
 #ifndef STRING
 #define STRING
 #include <string>
+#endif
+
+#ifndef IOSTREAM
+#define IOSTREAM
+#include <iostream>
 #endif
 
 #ifndef FRACTION_HPP
@@ -13,7 +13,9 @@
 #include "fraction.hpp"
 #endif
 
-#include "fractionBase.hpp"
+#ifndef SUPPORTF_HPP
+#define SUPPORTF_HPP
 #include "supportf.hpp"
+#endif
 
-void run();
+fraction strToFraction(std::string str);
